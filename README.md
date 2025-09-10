@@ -13,8 +13,8 @@ or coordinate system, but sharing the same skeletal structure,
 while ensuring that all poses are expressed on a canonical/normalized skeleton within a common centered coordinate system.
 
 > [!NOTE]  
-> First intended usage of these tools is for **preprocessing Sign Language skeletal pose sequences**
-> to prepare datasets for the training deep learning models.
+> First intended usage of these tools is **preprocessing Sign Language skeletal pose sequences**
+> to prepare datasets for the training of deep learning models.
 
 ## Installation
 
