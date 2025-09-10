@@ -26,7 +26,7 @@ pip install -r requirements.txt
 
 ## Usage example
 
-To use poses bones orientations and constant bone lengths for retargeting, follow this steps:
+To use poses' bones orientations and constant bone lengths for retargeting, follow these steps:
 
 ```python
 from skelretarget.utils import load_csv_skels, make_video_simple
