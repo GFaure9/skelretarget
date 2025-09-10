@@ -12,6 +12,10 @@ or coordinate system, but sharing the same skeletal structure,
 2) produce skeletal poses that preserve relative positions of joints within the skeletal reference 
 while ensuring that all poses are expressed on a canonical/normalized skeleton within a common centered coordinate system.
 
+> [!NOTE]  
+> First intended usage of these tools is for **preprocessing Sign Language skeletal pose sequences**
+> to prepare datasets for training deep learning models.
+
 ## Installation
 
 ```commandline
