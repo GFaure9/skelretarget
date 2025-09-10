@@ -14,7 +14,7 @@ while ensuring that all poses are expressed on a canonical/normalized skeleton w
 
 > [!NOTE]  
 > First intended usage of these tools is for **preprocessing Sign Language skeletal pose sequences**
-> to prepare datasets for training deep learning models.
+> to prepare datasets for the training deep learning models.
 
 ## Installation
 
