@@ -45,6 +45,10 @@ make_video_simple(
 ```
 
 If you rather want to find and apply similarity transformations to poses to 
-best match a centered normalized torso, you can also replace `"bones_orientations"` 
-in `run(method=...)` by `"similarity_transform"`.
+best match a centered normalized torso, please use the `run(...) ` method with the following
+arguments:
+
+```python
+retargeted_skels = retargeter.run(method="similarity_transform")
+```
 
