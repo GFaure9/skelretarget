@@ -9,11 +9,20 @@
 `skelretarget` provides methods that:
 1) take as input a sequence (or batch) of skeletal poses which may vary in scale, bone lengths 
 or coordinate system, but sharing the same skeletal structure,
-2) produce skeletal poses that preserves relative positions of joints within the skeletal reference 
-while ensuring that all poses are expressed on a canonical / normalized skeleton or, at minimum, aligned to a common,
-centered coordinate system.
+2) produce skeletal poses that preserve relative positions of joints within the skeletal reference 
+while ensuring that all poses are expressed on a canonical/normalized skeleton within a common centered coordinate system.
+
+## Installation
+
+```commandline
+git clone https://github.com/GFaure9/skelretarget.git
+cd skelretarget
+pip install -r requirements.txt
+```
 
 ## Usage example
+
+To use poses bones orientations and constant bone lengths for retargeting, follow this steps:
 
 ```python
 from skelretarget.utils import load_csv_skels, make_video_simple
@@ -34,3 +43,8 @@ make_video_simple(
     fps=25,
 )
 ```
+
+If you rather want to find and apply similarity transformations to poses to 
+best match a centered normalized torso, you can also replace `"bones_orientations"` 
+in `run(method=...)` by `"similarity_transform"`.
+
