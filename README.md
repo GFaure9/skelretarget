@@ -32,9 +32,10 @@ To use poses' bones orientations and constant bone lengths for retargeting, foll
 from skelretarget.utils import load_csv_skels, make_video_simple
 from skelretarget import MP178SkelRetarget
 
-skels = load_csv_skels('path/to/your/skels.csv')  # shape=(B, 178, 3) | assuming a Mediapipe-like 178 joints skeletal structure
+skels = load_csv_skels("path/to/your/skels.csv")  # shape=(B, 178, 3) | assuming a Mediapipe-like 178 joints skeletal structure
 retargeter = MP178SkelRetarget()
 retargeted_skels = retargeter.run(
+    skels,
     method="bones_orientations",
     face_normalize_method="bounding_box", 
     face_centering_method="pelvis_face_centroid",
@@ -53,6 +54,7 @@ best match a centered normalized torso, please use the `run(...) ` method with t
 arguments:
 
 ```python
-retargeted_skels = retargeter.run(method="similarity_transform")
+retargeted_skels = retargeter.run(skels, method="similarity_transform")
 ```
 
+![examples](./examples_outputs.png)
